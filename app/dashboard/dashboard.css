@@ -1,0 +1,165 @@
+.dashboard-container {
+  background-color: #111827;
+  min-height: 100vh;
+  color: white;
+  padding: 12px;
+  padding-bottom: 80px;
+}
+
+.loading-state {
+  text-align: center;
+  color: #9CA3AF;
+  padding: 20px;
+  background-color: #1F2937;
+  border-radius: 12px;
+  margin-top: 16px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  font-size: 20px;
+  color: #A855F7;
+  font-weight: bold;
+}
+
+.platforms-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  padding: 8px;
+}
+
+.platform-card {
+  background-color: #1F2937;
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #9CA3AF;
+}
+
+.platform-card:hover {
+  background-color: #374151;
+}
+
+.platform-card.active {
+  background-color: #374151;
+  border: 2px solid #A855F7;
+  color: #A855F7;
+}
+
+.platform-icon {
+  font-size: 24px;
+}
+
+.platform-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.analytics-container {
+  margin-top: 16px;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+.stats-overview {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.chart-card {
+  background-color: #1F2937;
+  padding: 16px;
+  border-radius: 12px;
+  min-height: 300px;
+}
+
+.chart-card h2 {
+  color: #9CA3AF;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.recharts-tooltip {
+  background-color: #374151 !important;
+  border: none !important;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.stat-change {
+  font-size: 12px;
+}
+
+.stat-change.increase {
+  color: #10B981;
+}
+
+.stat-change.decrease {
+  color: #EF4444;
+}
+
+@media (min-width: 640px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .platforms-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .platform-card {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .stats-overview {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .stats-overview {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .analytics-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chart-card:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dashboard-container {
+    padding: 24px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .chart-card {
+    min-height: 350px;
+  }
+}
