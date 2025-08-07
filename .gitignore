@@ -25,3 +25,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Dependencies
+/backend/node_modules
+node_modules
+
+# Environment variables
+.env
