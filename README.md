@@ -18,9 +18,7 @@ A comprehensive dashboard for analyzing social media data, built with **React.js
     -   React.js
     -   JavaScript (ES6+)
     -   HTML5 & CSS3 (or a preprocessor like Sass/SCSS)
-    -   A charting library (e.g., Chart.js, Recharts, or D3.js)
--   **Package Management:**
-    -   npm or Yarn
+    -   A charting library
 
 ## ⚙️ Getting Started
 
@@ -47,10 +45,6 @@ Make sure you have Node.js (which includes npm) installed on your system. You ca
     ```sh
     npm install
     ```
-    Or using Yarn:
-    ```sh
-    yarn install
-    ```
 
 ### Running the Application
 
@@ -58,11 +52,6 @@ Make sure you have Node.js (which includes npm) installed on your system. You ca
     Using npm:
     ```sh
     npm start
-    ```
-    Or using Yarn:
-    ```sh
-    yarn start
-    ```
 
 2.  **Open your web browser** and navigate to the following address:
     ```
@@ -102,9 +91,3 @@ If you have a suggestion that would make this better, please fork the repo and c
 4.  Push to the Branch (`git push origin feature/AmazingFeature`)
 5.  Open a Pull Request
 
-
-## 📧 Contact
-
-Ketan - [@ketan_1620](https://twitter.com/your_twitter_handle) - ketanchunara2016@gmail.com
-
-Project Link: [https://github.com/ketan1620/Social-Media-Analysis-Dashboard-App](https://github.com/ketan1620/Social-Media-Analysis-Dashboard-App)
